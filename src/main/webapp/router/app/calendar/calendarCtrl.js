@@ -136,7 +136,7 @@ angular
 											console.log(res);
 											if (res.operationPerformed == 'SUCCESS') {
 												if (res.resultContext == 'DELETE') {
-													$scope.eventDeleted(event);
+													$scope.eventDeleted(calendarEv);
 												} else {
 													$scope.events[$scope.events.indexOf(calendarEv)] = res.resultContext;
 												}
