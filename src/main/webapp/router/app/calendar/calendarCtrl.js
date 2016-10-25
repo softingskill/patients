@@ -138,6 +138,7 @@ angular
 												if (res.resultContext == 'DELETE') {
 													$scope.eventDeleted(calendarEv);
 												} else {
+													res.resultContext = setDateEnd(res.resultContext);
 													$scope.events[$scope.events.indexOf(calendarEv)] = res.resultContext;
 												}
 											}
