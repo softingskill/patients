@@ -32,7 +32,7 @@ public class DataSourceConfig {
 			dataSource.setUsername("sql7140776");
 			dataSource.setPassword("g4Tcxnf6z4");
 		} else {
-			dataSource.setUrl("jdbc:mysql://e42.ehosts.com:3306/devzonea_stomato");
+			dataSource.setUrl("jdbc:mysql://www.e42.ehosts.com:3306/devzonea_stomato");
 			dataSource.setUsername("devzonea_root");
 			dataSource.setPassword("mysql");
 		}
