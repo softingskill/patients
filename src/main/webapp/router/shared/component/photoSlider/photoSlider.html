@@ -1,11 +1,11 @@
 <div ng-controller="photoSliderCtrl">
 	<div style="width:75%; margin-left: 11.5%">
-		<div uib-carousel active="active" interval="myInterval"
+		<div uib-carousel active="active" interval="myInterval" style="max-width: 80%; margin-left: 10%"
 			no-wrap="noWrapSlides">
 			<div uib-slide ng-repeat="slide in slides track by slide.id"
 				index="slide.id">
 				<img ng-src="{{slide.image}}"
-					style="max-height: 500px; min-width: 100%; margin: 0 auto;">
+					style="max-height: 400px; min-width: 100%; margin: 0 auto;">
 				<div class="carousel-caption">
 					<!-- <h4>Slide {{slide.id}}</h4> -->
 					<!-- <p>{{slide.text}}</p> -->
