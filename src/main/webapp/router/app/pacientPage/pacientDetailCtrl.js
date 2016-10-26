@@ -82,6 +82,7 @@ angular
 
 						// others
 						$scope.saveConsult = function(cons) {
+							cons.editMode = false;
 							var index = getIndex($scope.pacient.edit.consultations, cons.edit);
 							tempUndoCons[index] = angular.copy(cons.edit);
 							checkForChanges();
