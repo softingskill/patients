@@ -161,8 +161,11 @@ angular
 															.insertConsult(newConsult.toInsert)
 															.then(
 																	function(resp) {
+																		$scope.pacient.edit.consultations[newConsult.index].editMode = false;
 																		$scope.pacient.edit.consultations[newConsult.index].edit.consultationId = angular
 																				.copy(resp.data);
+																		$scope.pacient.edit.consultations[newConsult.index].original.consultationId = angular
+																		.copy(resp.data);
 																		if (newConsutations.indexOf(newConsult) == newConsutations.length - 1) {
 																			q.resolve();
 																		}
