@@ -25,7 +25,7 @@ public class DataSourceConfig {
 	public DataSource dataSource() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-		boolean enableExternalDb = false;
+		boolean enableExternalDb = true;
 		if (enableExternalDb) {
 			dataSource
 					.setUrl("jdbc:mysql://sql7.freemysqlhosting.net:3306/sql7140776");
