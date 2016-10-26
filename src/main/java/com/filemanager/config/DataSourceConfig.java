@@ -25,15 +25,15 @@ public class DataSourceConfig {
 	public DataSource dataSource() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-		boolean enableExternalDb = true;
+		boolean enableExternalDb = false;
 		if (enableExternalDb) {
 			dataSource
 					.setUrl("jdbc:mysql://sql7.freemysqlhosting.net:3306/sql7140776");
 			dataSource.setUsername("sql7140776");
 			dataSource.setPassword("g4Tcxnf6z4");
 		} else {
-			dataSource.setUrl("jdbc:mysql://localhost:3306/stomato");
-			dataSource.setUsername("root");
+			dataSource.setUrl("jdbc:mysql://192.185.128.100:3306/stomato");
+			dataSource.setUsername("devzonea_root");
 			dataSource.setPassword("mysql");
 		}
 		return dataSource;
